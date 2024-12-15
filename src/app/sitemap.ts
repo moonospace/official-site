@@ -10,26 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date().toISOString(),
     },
     {
-      url: `${BASE_URL}/services`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/works`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/plans`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/faqs`,
-      lastModified: new Date().toISOString(),
-    },
-    {
-      url: `${BASE_URL}/contact`,
-      lastModified: new Date().toISOString(),
-    },
-    {
       url: `${BASE_URL}/terms`,
       lastModified: new Date().toISOString(),
     },

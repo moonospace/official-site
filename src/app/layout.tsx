@@ -3,7 +3,11 @@ import type { Metadata } from 'next'
 import { config, sharedMetadata } from '@shared/libs'
 import { fonts } from '@shared/libs'
 import '@shared/styles/globals.css'
-import { AnimationProvider, PosthogProvider } from '@shared/providers'
+import {
+  AnimationProvider,
+  PosthogProvider,
+  ThemeProvider,
+} from '@shared/providers'
 import { CenteredLayout, Footer, Header } from '@shared/components'
 
 export const metadata: Metadata = {
@@ -52,13 +56,20 @@ export default function RootLayout({
       <PosthogProvider>
         <AnimationProvider>
           <body suppressHydrationWarning>
-            <CenteredLayout>
-              <Header />
-              <main className="min-h-screen py-20 tablet:pt-20 tablet:pb-36">
-                {children}
-              </main>
-              <Footer />
-            </CenteredLayout>
+            <ThemeProvider
+              defaultTheme="system"
+              attribute={'class'}
+              disableTransitionOnChange
+              enableSystem
+            >
+              <CenteredLayout>
+                <Header />
+                <main className="min-h-screen pt-0 pb-28 tablet:pb-36">
+                  {children}
+                </main>
+                <Footer />
+              </CenteredLayout>
+            </ThemeProvider>
           </body>
         </AnimationProvider>
       </PosthogProvider>
