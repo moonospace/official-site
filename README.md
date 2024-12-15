@@ -1,35 +1,24 @@
-<!-- README -->
+# Official Website
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/moono-space/official-site)
-![GitHub Sponsors](https://img.shields.io/github/sponsors/nyomansunima)
-![GitHub](https://img.shields.io/github/license/moono-space/official-site)
-![GitHub issues](https://img.shields.io/github/issues/moono-space/official-site)
-
-[🐛 Issues](https://github.com/moono-space/official-site/issues) . [📝 Explore docs](https://github.com/moono-space/official-site)
-
-# Moono Official Site
-
-Official website for Moono. The house for better software
+_"Brook Code Theme official website | The best clean code editor theme that combine simplicity and clean look"_
 
 ## About
 
-This project is only contain an official site for moono. Build with clean, simple and minimal design.
+This project is about the official website of Brook Code Theme. The website used to showcase the product and to become the landing page for the users who want to know about the product. Build using simple and clean look to ensure the user can focus on the content.
 
-You can access this site on [https://moono.space](https://moono.space)
+You can access this site on _[https://brookcodetheme.vercel.app](https://brookcodetheme.vercel.app)_
 
-### Motivation
+Screenshots:
 
-Moono was release to realize the dream from the author to maintain and create micro services, apps, and saas that help people problem.
+![Banner](https://cdn.hashnode.com/res/hashnode/image/upload/v1732187828243/cc1d78a8-387f-457e-841e-20f9528588e9.png)
 
-## Features
+![Banner](https://cdn.hashnode.com/res/hashnode/image/upload/v1732548343657/5d9b090f-4127-4f49-b4d6-c6f583aa3db9.png)
 
-This project is contain buch of feature included to help me support my workflow
+![Banner](https://cdn.hashnode.com/res/hashnode/image/upload/v1732548350443/43f4e5d7-4fda-4ad8-ab92-e57a78b11e7a.png)
 
-- 🚀 Products Showcase / List
-- 🎯 Target and Status
-- 🐔 Contact
-- ⁉️ FAQs
-- 🏓 Newsletter
+## Motivation
+
+This project is built to support the product and allow the user to know more about the product. Also allow the public know about the product.
 
 ## Stacks
 
@@ -39,14 +28,32 @@ Since building this project here are list about stack, site, tech and any librar
 - [Tailwincss](https://tailwindcss.com)
 - [Lenis Scroll Smoother](https://lenis.studiofreight.com)
 - [Vercel](https://vercel.com)
-- [GoDaddy](https://www.godaddy.com)
 - [Shadcn UI](https://ui.shadcn.com)
 - [Radix UI](https://radix-ui.com)
+- [PostHog](https://posthog.com)
 - [Framer Motion](https://www.framer.com/motion)
+- [React](https://reactjs.org)
+- Etc.
 
-## Roadmap
+## Features
 
-All about the task, issues, and roadmap for this projec you can find it on Project Section.
+Here are some features in this project:
+
+- Waitinglist
+- Landing Page
+- Responsive
+- Full SEO
+- Support Light and Dark Mode
+- Analutics with PostHog
+
+## Documentation
+
+You can find the documentation and details about this project in the links below:
+
+- [Learn how to contribute](./CONTRIBUTING.md)
+- [Read the code policy](./CODE_OF_CONDUCT.md)
+- [Read the license](./LICENSE)
+- [Read the changelog](./CHANGELOG.md)
 
 ## License
 

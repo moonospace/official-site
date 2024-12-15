@@ -1,15 +1,14 @@
 import type { Config } from 'tailwindcss'
+import form from '@tailwindcss/forms'
+import typography from '@tailwindcss/typography'
+import animation from 'tailwindcss-animate'
 
-const config: Config = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+export default {
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx,json}'],
+  darkMode: ['selector'],
   theme: {
     fontFamily: {
-      sans: ['var(--font-geist-sans)'],
-      mono: ['var(--font-geist-mono)'],
+      sans: ['var(--font-inter)'],
     },
     screens: {
       tablet: '640px',
@@ -18,31 +17,28 @@ const config: Config = {
     },
     extend: {
       fontSize: {
-        base: '15px',
+        base: '.935rem',
       },
       colors: {
-        background: 'hsl(var(--background))',
-        foreground: 'hsl(var(--foreground))',
-        ambient: 'hsl(var(--ambient))',
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
+        background: 'hsl(var(--color-background))',
+        foreground: 'hsl(var(--color-foreground))',
+        surface: 'hsl(var(--color-surface))',
+        border: 'hsl(var(--color-border))',
+        input: 'hsl(var(--color-input))',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: 'hsl(var(--color-primary))',
+          foreground: 'hsl(var(--color-primary-foreground))',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: 'hsl(var(--color-secondary))',
+          foreground: 'hsl(var(--color-secondary-foreground))',
         },
-      },
-      typography: {
-        DEFAULT: {
-          css: {},
+        destructive: {
+          DEFAULT: 'hsl(var(--color-destructive))',
+          foreground: 'hsl(var(--color-destructive-foreground))',
         },
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
-}
-
-export default config
+  plugins: [form, typography, animation],
+} satisfies Config
