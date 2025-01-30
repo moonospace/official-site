@@ -3,6 +3,7 @@
 import { Button, CenteredLayout } from '@shared/components'
 import { fonts } from '@shared/libs'
 import '@shared/styles/globals.css'
+import '@flaticon/flaticon-uicons/css/all/all.css'
 
 export default function GlobalError({
   reset,
@@ -19,7 +20,7 @@ export default function GlobalError({
       <body suppressHydrationWarning>
         <CenteredLayout>
           <main className="min-h-screen">
-            <h1 className="!leading-tight text-3xl tablet:text-4xl text-center font-medium">
+            <h1 className="leading-tight! text-3xl tablet:text-4xl text-center font-medium">
               Something wrong!
             </h1>
 
