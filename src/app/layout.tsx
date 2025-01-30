@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { config, sharedMetadata } from '@shared/libs'
 import { fonts } from '@shared/libs'
 import '@shared/styles/globals.css'
+import '@flaticon/flaticon-uicons/css/all/all.css'
 import {
   AnimationProvider,
   PosthogProvider,
