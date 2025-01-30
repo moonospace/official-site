@@ -14,7 +14,7 @@ export function ProjectSection(): React.ReactElement {
   return (
     <section className="flex flex-col w-full mx-auto">
       <div className="flex flex-col gap-6">
-        <p className="text-foreground/70 !leading-relaxed text-pretty">
+        <p className="text-foreground/70 leading-relaxed! text-pretty">
           Product that we ship with heart and soul:
         </p>
 

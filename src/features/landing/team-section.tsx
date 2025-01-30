@@ -11,7 +11,7 @@ export function TeamSection(): React.ReactElement {
   return (
     <section className="flex flex-col w-full mx-auto">
       <div className="flex flex-col gap-6">
-        <p className="text-foreground/70 !leading-relaxed text-pretty">
+        <p className="text-foreground/70 leading-relaxed! text-pretty">
           Moono was founded by{' '}
           <TooltipProvider>
             <Tooltip>
@@ -33,7 +33,7 @@ export function TeamSection(): React.ReactElement {
           been created. Everythig just start small until it become a thing and
           supported by people in the community.
         </p>
-        <p className="text-foreground/70 !leading-relaxed text-pretty">
+        <p className="text-foreground/70 leading-relaxed! text-pretty">
           Now, we just focus on shipping a high quality product that combine the
           team with community feedback and understand what they really needs and
           wants.
