@@ -12,7 +12,7 @@ import {
 import { CenteredLayout, Footer, Header } from '@shared/components'
 
 export const metadata: Metadata = {
-  title: 'Moono',
+  title: 'The House for Better Software | Moono',
   description: 'The house for better software, products and apps',
   applicationName: 'Moono',
   keywords: [
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
   authors: [{ name: 'Nyoman Sunima', url: 'https://nyomansunima.one' }],
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Moono',
+    title: 'The House for Better Software | Moono',
     description: 'The house for better software, products and apps',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Moono',
+    title: 'The House for Better Software | Moono',
     description: 'The house for better software, products and apps',
   },
   metadataBase: new URL(config.app.host),

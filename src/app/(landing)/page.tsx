@@ -9,16 +9,16 @@ import {
 } from '@features/landing'
 
 export const metadata: Metadata = {
-  title: 'Moono',
+  title: 'The House for Better Software | Moono',
   description: 'The house for better software, products and apps',
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Moono',
+    title: 'The House for Better Software | Moono',
     description: 'The house for better software, products and apps',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Moono',
+    title: 'The House for Better Software | Moono',
     description: 'The house for better software, products and apps',
   },
 }

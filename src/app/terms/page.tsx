@@ -5,16 +5,16 @@ import Link from 'next/link'
 import { ArticleContent } from '@shared/components'
 
 export const metadata: Metadata = {
-  title: 'Terms of use',
+  title: 'Terms of use | Moono',
   description: 'Read the terms of use for this site',
   openGraph: {
     ...sharedMetadata.openGraph,
-    title: 'Terms of use',
+    title: 'Terms of use | Moono',
     description: 'Read the terms of use for this site',
   },
   twitter: {
     ...sharedMetadata.twitter,
-    title: 'Terms of use',
+    title: 'Terms of use | Moono',
     description: 'Read the terms of use for this site',
   },
 }
