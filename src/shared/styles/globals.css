@@ -4,11 +4,10 @@
 @plugin '@tailwindcss/typography';
 @plugin 'tailwindcss-animate';
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
   --font-*: initial;
   --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 
   --breakpoint-*: initial;
   --breakpoint-tablet: 640px;
@@ -17,49 +16,17 @@
 
   --text-base: 0.935rem;
 
-  --color-background: var(--color-background);
-  --color-foreground: var(--color-foreground);
-  --color-surface: var(--color-surface);
-  --color-border: var(--color-border);
-  --color-input: var(--color-input);
-  --color-primary: var(--color-primary);
-  --color-primary-foreground: var(--color-primary-foreground);
-  --color-secondary: var(--color-secondary);
-  --color-secondary-foreground: var(--color-secondary-foreground);
-  --color-destructive: var(--color-destructive);
-  --color-destructive-foreground: var(--color-destructive-foreground);
-}
-
-@layer base {
-  :root {
-    --color-background: hsl(0 0 98%);
-    --color-foreground: hsl(0 0 0%);
-    --color-surface: hsl(0 0 100%);
-    --color-border: hsl(0 0 94%);
-    --color-input: hsl(0 0 97%);
-    --color-link: hsl(221 83 53%);
-    --color-accent: hsl(0 0 40%);
-    --color-primary: hsl(0 0 0%);
-    --color-primary-foreground: hsl(0 0 96%);
-    --color-secondary: hsl(0 0 96%);
-    --color-secondary-foreground: hsl(0 0 0%);
-  }
-}
-
-@layer utilities {
-  .dark {
-    --color-background: hsl(0 0 5%);
-    --color-foreground: hsl(0 0 90%);
-    --color-surface: hsl(0 0 8%);
-    --color-border: hsl(0 0 15%);
-    --color-input: hsl(0 0 9%);
-    --color-link: hsl(213 94 68%);
-    --color-accent: hsl(0 0 40%);
-    --color-primary: hsl(0 0 98%);
-    --color-primary-foreground: hsl(0 0 0%);
-    --color-secondary: hsl(0 0 10%);
-    --color-secondary-foreground: hsl(0 0 98%);
-  }
+  --color-background: hsl(0 0 98%);
+  --color-foreground: hsl(0 0 0%);
+  --color-surface: hsl(0 0 100%);
+  --color-border: hsl(0 0 94%);
+  --color-input: hsl(0 0 97%);
+  --color-link: hsl(221 83 53%);
+  --color-accent: hsl(0 0 40%);
+  --color-primary: hsl(0 0 0%);
+  --color-primary-foreground: hsl(0 0 96%);
+  --color-secondary: hsl(0 0 96%);
+  --color-secondary-foreground: hsl(0 0 0%);
 }
 
 @layer base {
@@ -76,7 +43,7 @@
   }
 
   body {
-    @apply min-h-screen text-sm! tablet:text-base! font-normal text-foreground bg-background leading-normal font-sans! antialiased;
+    @apply text-base font-normal text-foreground bg-background leading-normal font-sans subpixel-antialiased;
     font-variation-settings: normal;
     font-feature-settings:
       'rlig' 1,
