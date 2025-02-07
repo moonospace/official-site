@@ -49,10 +49,11 @@ function FooterMenuList(): React.ReactElement<any> {
 export function Footer(): React.ReactElement<any> {
   return (
     <footer className="flex flex-col text-sm" id="footer">
-      <div className="flex flex-col tablet:flex-row laptop:items-center py-7 laptop:justify-between mt-8">
+      <div className="flex flex-col tablet:flex-row tablet:items-center py-7 tablet:justify-between mt-8">
         <span className="text-sm">
           Copyright &copy; 2024 - Alright Reserved
         </span>
+
         <FooterMenuList />
       </div>
     </footer>
