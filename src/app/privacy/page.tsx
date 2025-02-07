@@ -25,7 +25,6 @@ export default function PrivacyPage(): React.ReactElement {
       <ArticleContent>
         <h1>Privacy policy</h1>
 
-        <strong>Effective Date: Friday, 12 April 2024</strong>
         <p>
           This privacy policy outlines the information practices and procedures
           followed by{' '}
