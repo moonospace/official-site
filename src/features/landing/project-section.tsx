@@ -13,10 +13,8 @@ const projects: Project[] = [
 export function ProjectSection(): React.ReactElement {
   return (
     <section className="flex flex-col w-full mx-auto">
-      <div className="flex flex-col gap-6">
-        <p className="text-foreground/70 leading-relaxed! text-pretty">
-          Product that we ship with heart and soul:
-        </p>
+      <div className="flex flex-col gap-6 text-pretty leading-relaxed">
+        <p>Product that we ship with heart and soul:</p>
 
         <ul className="flex flex-col gap-2 ml-3 text-foreground/70">
           {projects.map((project, index) => (

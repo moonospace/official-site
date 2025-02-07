@@ -25,11 +25,15 @@ export function ProjectItem({ project }: ProjectItemProps): React.ReactElement {
     <li className="flex items-center gap-2">
       <i className="fi fi-sr-circle-small" />
 
-      <div className="">
+      <div className="group">
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
-              <Link href={link} target="_blank" className="text-foreground">
+              <Link
+                href={link}
+                target="_blank"
+                className="text-foreground group-hover:text-link"
+              >
                 {name}
               </Link>
             </TooltipTrigger>
