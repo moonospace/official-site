@@ -4,11 +4,7 @@ import { config, sharedMetadata } from '@shared/libs'
 import { fonts } from '@shared/libs'
 import '@shared/styles/globals.css'
 import '@flaticon/flaticon-uicons/css/all/all.css'
-import {
-  AnimationProvider,
-  PosthogProvider,
-  ThemeProvider,
-} from '@shared/providers'
+import { AnimationProvider, PosthogProvider } from '@shared/providers'
 import { CenteredLayout, Footer, Header } from '@shared/components'
 
 export const metadata: Metadata = {
@@ -52,25 +48,18 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${fonts.inter.variable}`}
+      className={`${fonts.inter.variable} ${fonts.jetBrainsMono.variable}`}
     >
       <PosthogProvider>
         <AnimationProvider>
-          <body suppressHydrationWarning>
-            <ThemeProvider
-              defaultTheme="system"
-              attribute={'class'}
-              disableTransitionOnChange
-              enableSystem
-            >
-              <CenteredLayout>
-                <Header />
-                <main className="min-h-screen pt-0 pb-28 tablet:pb-36">
-                  {children}
-                </main>
-                <Footer />
-              </CenteredLayout>
-            </ThemeProvider>
+          <body>
+            <CenteredLayout>
+              <Header />
+              <main className="min-h-screen pt-0 pb-28 tablet:pb-36">
+                {children}
+              </main>
+              <Footer />
+            </CenteredLayout>
           </body>
         </AnimationProvider>
       </PosthogProvider>
