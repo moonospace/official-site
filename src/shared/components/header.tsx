@@ -1,10 +1,9 @@
-import * as React from 'react'
-import Link from 'next/link'
+import { Link } from "react-router"
 
-function Brand(): React.ReactElement {
+function Brand() {
   return (
     <Link
-      href={'/'}
+      to={"/"}
       className="flex items-center text-sm transition-all duration-300 font-medium hover:-translate-y-1"
     >
       moono.space
@@ -12,11 +11,11 @@ function Brand(): React.ReactElement {
   )
 }
 
-function Actions(): React.ReactElement {
+function Actions() {
   return <div className="flex items-center gap-3"></div>
 }
 
-export function Header(): React.ReactElement<any> {
+export function Header() {
   return (
     <header className="flex items-center justify-between h-24 laptop:h-40">
       <Brand />

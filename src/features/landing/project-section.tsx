@@ -1,16 +1,15 @@
-import * as React from 'react'
-import { Project, ProjectItem } from './project-item'
+import { type Project, ProjectItem } from "./project-item"
 
 const projects: Project[] = [
   {
-    name: 'Indie Page',
-    description: 'In progress, coming soon',
-    link: 'https://moono.vercel.app',
-    label: 'The page for indie hackers',
+    name: "Indie Page",
+    description: "In progress, coming soon",
+    link: "https://moono.vercel.app",
+    label: "The page for indie hackers",
   },
 ]
 
-export function ProjectSection(): React.ReactElement {
+export function ProjectSection() {
   return (
     <section className="flex flex-col w-full mx-auto">
       <div className="flex flex-col gap-6 text-pretty leading-relaxed">

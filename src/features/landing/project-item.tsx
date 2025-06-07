@@ -3,9 +3,8 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@shared/components'
-import Link from 'next/link'
-import * as React from 'react'
+} from "@shared/components"
+import { Link } from "react-router"
 
 export type Project = {
   name: string
@@ -30,7 +29,7 @@ export function ProjectItem({ project }: ProjectItemProps): React.ReactElement {
           <Tooltip>
             <TooltipTrigger>
               <Link
-                href={link}
+                to={link}
                 target="_blank"
                 className="text-foreground group-hover:text-link"
               >

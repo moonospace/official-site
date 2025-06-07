@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
@@ -46,8 +46,8 @@
     @apply text-base font-normal text-foreground bg-background leading-normal font-sans subpixel-antialiased;
     font-variation-settings: normal;
     font-feature-settings:
-      'rlig' 1,
-      'calt' 1;
+      "rlig" 1,
+      "calt" 1;
   }
 
   .fi {
@@ -76,16 +76,16 @@
   font-weight: var(--font-weight-normal);
 
   a {
-    text-decoration: 'none';
-    font-weight: '400 !important';
+    text-decoration: "none";
+    font-weight: 400 !important;
 
     &:hover {
-      text-decoration: 'underline';
+      text-decoration: "underline";
     }
   }
 
   em {
-    font-style: 'italic';
+    font-style: "italic";
     color: var(--color-accent);
   }
 

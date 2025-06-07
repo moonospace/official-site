@@ -1,8 +1,8 @@
-'use client'
+"use client"
 
-import * as React from 'react'
-import * as TooltipPrimitive from '@radix-ui/react-tooltip'
-import { mergeClass } from '@shared/utils'
+import * as React from "react"
+import * as TooltipPrimitive from "@radix-ui/react-tooltip"
+import { mergeClass } from "@shared/libs"
 
 const TooltipProvider = TooltipPrimitive.Provider
 
@@ -18,7 +18,7 @@ const TooltipContent = React.forwardRef<
     ref={ref}
     sideOffset={sideOffset}
     className={mergeClass(
-      'z-50 overflow-hidden rounded-xl border border-border bg-surface px-3 py-1.5 text-xs text-foreground/70',
+      "z-50 overflow-hidden rounded-xl border border-border bg-surface px-3 py-1.5 text-xs text-foreground/70",
       className,
     )}
     {...props}

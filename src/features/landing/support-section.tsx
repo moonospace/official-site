@@ -1,6 +1,6 @@
-import * as React from 'react'
+import * as React from "react"
 
-export function SupportSection(): React.ReactElement {
+export function SupportSection() {
   return (
     <section className="flex flex-col w-full mx-auto">
       <div className="flex flex-col gap-6 leading-relaxed text-pretty">

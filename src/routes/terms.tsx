@@ -1,32 +1,22 @@
-import * as React from 'react'
-import { Metadata } from 'next'
-import { sharedMetadata } from '@shared/libs'
-import Link from 'next/link'
-import { ArticleContent } from '@shared/components'
+import { Link } from "react-router"
+import { ArticleContent } from "@shared/components"
+import { generatedMetadata } from "@shared/libs"
 
-export const metadata: Metadata = {
-  title: 'Terms of use | Moono',
-  description: 'Read the terms of use for this site',
-  openGraph: {
-    ...sharedMetadata.openGraph,
-    title: 'Terms of use | Moono',
-    description: 'Read the terms of use for this site',
-  },
-  twitter: {
-    ...sharedMetadata.twitter,
-    title: 'Terms of use | Moono',
-    description: 'Read the terms of use for this site',
-  },
+export function meta() {
+  return generatedMetadata({
+    title: "Terms of use | Moono",
+    description: "Read the terms of use for this site",
+  })
 }
 
-export default function PrivacyPage(): React.ReactElement {
+export default function PrivacyPage() {
   return (
     <div className="flex flex-col">
       <ArticleContent>
         <h1>Terms of use</h1>
         <p>
           These terms of use govern your use of our website, located at 
-          <Link href={'https://moono.space'}>https://moono.space</Link> Please
+          <Link to={"https://moono.space"}>https://moono.space</Link> Please
           read these terms carefully before accessing or using our website.
         </p>
 
@@ -85,8 +75,8 @@ export default function PrivacyPage(): React.ReactElement {
 
         <h2>Limitation of Liability</h2>
         <p>
-          In no event shall{' '}
-          <Link href={'https://moono.space'}>https://moono.space</Link>
+          In no event shall{" "}
+          <Link to={"https://moono.space"}>https://moono.space</Link>
            or its affiliates be liable for any direct, indirect, incidental,
           consequential, or punitive damages arising out of or in connection
           with your use of our website. This includes, but is not limited to,
@@ -122,7 +112,7 @@ export default function PrivacyPage(): React.ReactElement {
         <h2>Contact</h2>
         <p>
           If you have any questions or concerns regarding these terms of use,
-          please <Link href={'/contact'}>contact us</Link>.
+          please <Link to={"/contact"}>contact us</Link>.
         </p>
       </ArticleContent>
     </div>

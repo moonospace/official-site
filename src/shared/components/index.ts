@@ -1,9 +1,6 @@
-export * from './ui/button'
-export * from './ui/tooltip'
-
-export * from './animation/transition'
-
-export * from './common/content'
-export * from './common/footer'
-export * from './common/header'
-export * from './common/centered-layout'
+export * from "./ui/button"
+export * from "./ui/tooltip"
+export * from "./content"
+export * from "./footer"
+export * from "./header"
+export * from "./centered-layout"
