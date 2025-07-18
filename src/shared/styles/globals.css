@@ -1,3 +1,10 @@
+/* Icons */
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-chubby/css/uicons-solid-chubby.css");
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+/* Tailwindcss */
 @import "tailwindcss";
 
 @plugin '@tailwindcss/forms';
@@ -6,8 +13,8 @@
 
 @theme {
   --font-*: initial;
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-jetbrains-mono);
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 
   --breakpoint-*: initial;
   --breakpoint-tablet: 640px;
