@@ -1,8 +1,8 @@
-/* Icons */
-@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-chubby/css/uicons-solid-chubby.css");
-
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+/* Icons */
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-chubby/css/uicons-solid-chubby.css");
 
 /* Tailwindcss */
 @import "tailwindcss";
@@ -23,7 +23,7 @@
 
   --text-base: 0.935rem;
 
-  --color-background: hsl(0 0 98%);
+  --color-background: hsl(0 0 100%);
   --color-foreground: hsl(0 0 0%);
   --color-surface: hsl(0 0 100%);
   --color-border: hsl(0 0 94%);
@@ -58,7 +58,7 @@
   }
 
   .fi {
-    @apply flex justify-center items-center text-sm;
+    @apply flex justify-center items-center;
   }
 }
 
