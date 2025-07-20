@@ -4,9 +4,9 @@ function Brand() {
   return (
     <Link
       to={"/"}
-      className="flex items-center text-sm transition-all duration-300 font-medium hover:-translate-y-1"
+      className="flex items-center justify-center h-10 w-10 bg-secondary text-secondary-foreground text-sm rounded-2xl transition-all duration-300 font-medium hover:-translate-y-1"
     >
-      moono.space
+      <i className="fi fi-sc-bookmark" />
     </Link>
   )
 }
