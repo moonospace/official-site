@@ -16,7 +16,7 @@ export function TeamSection() {
             <Tooltip>
               <TooltipTrigger>
                 <Link
-                  to={"https://nyomansunima.one"}
+                  to={"https://nyomansunima.com"}
                   target="_blank"
                   className="text-link"
                 >
