@@ -1,22 +1,16 @@
 import { ProjectItem } from "./project-item"
 import type { Project } from "./project-item"
+import projectsData from "./projects-data.json"
 
-const projects: Project[] = [
-  {
-    name: "Indie Page",
-    description: "In progress, coming soon",
-    link: "https://moono.vercel.app",
-    label: "The page for indie hackers",
-  },
-]
+const projects = projectsData as Project[]
 
 export function ProjectSection() {
   return (
     <section className="flex flex-col w-full mx-auto">
       <div className="flex flex-col gap-6 text-pretty leading-relaxed">
-        <p>Product that we ship with heart and soul:</p>
+        <p>Product that we ship recently:</p>
 
-        <ul className="flex flex-col gap-2 ml-3 text-foreground/70">
+        <ul className="flex flex-col gap-2 ml-3">
           {projects.map((project, index) => (
             <ProjectItem key={index} project={project} />
           ))}
