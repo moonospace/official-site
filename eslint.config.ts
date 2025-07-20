@@ -8,16 +8,15 @@ import {
 } from "@antfu/eslint-config"
 
 export default combine(
-  ignores(["node_modules/**", "build/**", ".react-router/**"]),
+  ignores(["build/**", ".react-router/**"]),
   javascript(),
   imports(),
   typescript(),
-  react(),
-  {
-    rules: {
+  react({
+    overrides: {
       "react-dom/no-dangerously-set-innerhtml": "off",
       "react/no-array-index-key": "off",
       "react-refresh/only-export-components": "off",
     },
-  },
+  }),
 )
