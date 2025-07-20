@@ -1,10 +1,8 @@
-import * as React from "react"
-
 export function HeroSection() {
   return (
     <section className="flex flex-col w-full mx-auto">
       <div className="flex flex-col gap-6 leading-7 text-pretty">
-        <p className="font-mono text-foreground/60 tracking-tight">
+        <p className="font-mono text-foreground/60 tracking-tight text-sm">
           _The house for better software_
         </p>
         <p>
