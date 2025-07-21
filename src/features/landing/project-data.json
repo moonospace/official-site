@@ -1,7 +1,7 @@
 [
   {
     "name": "Indie Page",
-    "description": "In progress, coming soon",
+    "desc": "In progress, coming soon",
     "link": "https://moono.vercel.app",
     "label": "The page for indie hackers"
   }
