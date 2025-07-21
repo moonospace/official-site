@@ -1,8 +1,8 @@
 import { ProjectItem } from "./project-item"
 import type { Project } from "./project-item"
-import projectsData from "./projects-data.json"
+import projectData from "./project-data.json"
 
-const projects = projectsData as Project[]
+const projects = projectData as Project[]
 
 export function ProjectSection() {
   return (

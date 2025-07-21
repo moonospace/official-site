@@ -8,7 +8,7 @@ import { Link } from "react-router"
 
 export interface Project {
   name: string
-  description: string
+  desc: string
   link: string
   label: string
 }
@@ -18,21 +18,23 @@ interface ProjectItemProps {
 }
 
 export function ProjectItem({ project }: ProjectItemProps): React.ReactElement {
-  const { name, description, link, label } = project
+  const { name, desc, link, label } = project
 
   return (
-    <li className="flex group transition-all duration-300 hover:-translate-y-1">
+    <li className="flex group">
       <Link to={link} target="_blank" className="flex items-center gap-2">
-        <i className="fi fi-sc-check-circle" />
+        <i className="fi fi-sc-check-circle transition-all duration-300 group-hover:scale-125" />
 
         <div className="group">
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger className="cursor-pointer">{name}</TooltipTrigger>
+              <TooltipTrigger className="cursor-pointer">
+                <span>{name}</span> -{" "}
+                <span className="text-foreground/60">{desc}</span>
+              </TooltipTrigger>
               <TooltipContent>{label}</TooltipContent>
             </Tooltip>
           </TooltipProvider>
-          <span className="text-foreground/60"> - {description}</span>
         </div>
       </Link>
     </li>
