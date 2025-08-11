@@ -1,5 +1,4 @@
 export * from "./ui/button"
-export * from "./ui/tooltip"
 export * from "./content"
 export * from "./footer"
 export * from "./header"
