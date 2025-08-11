@@ -28,7 +28,7 @@
   --color-surface: hsl(0 0 100%);
   --color-border: hsl(0 0 94%);
   --color-input: hsl(0 0 97%);
-  --color-link: hsl(221 83 53%);
+  --color-link: hsl(0 0 0%);
   --color-accent: hsl(0 0 40%);
   --color-primary: hsl(0 0 0%);
   --color-primary-foreground: hsl(0 0 96%);
@@ -50,7 +50,7 @@
   }
 
   body {
-    @apply text-base font-normal text-foreground bg-background leading-normal font-sans subpixel-antialiased;
+    @apply text-base font-normal text-foreground bg-background leading-normal font-sans antialiased;
     font-variation-settings: normal;
     font-feature-settings:
       "rlig" 1,
