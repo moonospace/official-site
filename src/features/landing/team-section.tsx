@@ -1,9 +1,3 @@
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@shared/components"
 import { Link } from "react-router"
 
 export function TeamSection() {
@@ -12,22 +6,13 @@ export function TeamSection() {
       <div className="flex flex-col gap-6 leading-7 text-pretty">
         <p>
           Moono was founded by{" "}
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>
-                <Link
-                  to={"https://nyomansunima.com"}
-                  target="_blank"
-                  className="text-link"
-                >
-                  Nyoman Sunima
-                </Link>
-              </TooltipTrigger>
-              <TooltipContent>
-                The creative founder and contributor
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>{" "}
+          <Link
+            to={"https://nyomansunima.com"}
+            target="_blank"
+            className="text-link underline"
+          >
+            Nyoman Sunima
+          </Link>{" "}
           in 2024 as the publication for all of the software products that has
           been created. Everythig just start small until it become a thing and
           supported by people in the community.

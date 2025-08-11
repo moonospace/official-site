@@ -2,9 +2,6 @@ export function HeroSection() {
   return (
     <section className="flex flex-col w-full mx-auto">
       <div className="flex flex-col gap-6 leading-7 text-pretty">
-        <p className="font-mono text-foreground/60 tracking-tight text-sm">
-          _The house for better software_
-        </p>
         <p>
           Moono is collections of saas or software that are designed to be
           better than their competitors. We are a community of like-minded
