@@ -8,7 +8,7 @@ import {
 
 export function meta() {
   return generatedMetadata({
-    title: "Ambitious software crafter | Moono",
+    title: "Ambitious Software Crafter | Moono",
     description:
       "Small teams of indie hacker trying to crafting and ship a good software globally",
   })
