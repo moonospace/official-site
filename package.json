@@ -1,48 +1,34 @@
 {
-  "name": "moono-official-site",
-  "version": "0.0.0",
+  "name": "official-site",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "react-router dev",
-    "build": "react-router build",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc",
-    "format": "prettier . --write --list-different",
-    "lint": "eslint . --fix"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "ultracite fix && tsc",
+    "clean": "rm -rf .tanstack .nitro .output dist build"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
-    "@react-router/fs-routes": "^7.8.0",
-    "@react-router/node": "^7.8.0",
-    "@react-router/serve": "^7.8.0",
-    "isbot": "^5",
+    "@tanstack/react-router": "^1.141.2",
+    "@tanstack/react-start": "^1.141.3",
+    "nitro": "^3.0.1-alpha.1",
     "react": "^19",
-    "react-dom": "^19",
-    "react-router": "^7.8.0"
+    "react-dom": "^19"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^6.2.0",
-    "@eslint-react/eslint-plugin": "^2.0.4",
-    "@react-router/dev": "^7.8.0",
-    "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/postcss": "^4.1.11",
-    "@tailwindcss/typography": "^0.5.16",
+    "@biomejs/biome": "2.3.8",
     "@tailwindcss/vite": "^4.1.11",
-    "@types/node": "^24",
+    "@types/node": "^25.0.2",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "eslint": "^9.33.0",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "prettier": "^3.6.2",
-    "tailwind-merge": "^3.3.1",
+    "@vitejs/plugin-react": "^5.1.2",
     "tailwindcss": "^4.1.11",
-    "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.9.2",
+    "ultracite": "6.4.0",
     "vite": "^7.1.1",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^5.1.4",
+    "web-vitals": "^5.1.0"
   }
 }
