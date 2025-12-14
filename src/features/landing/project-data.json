@@ -1,7 +1,57 @@
 [
   {
-    "name": "Indie Page",
-    "desc": "In progress, coming soon",
-    "link": "https://moono.vercel.app"
+    "name": "Compobits",
+    "desc": "Stunning crafted react components collections",
+    "link": "https://compobits.moono.site"
+  },
+  {
+    "name": "Picosecond",
+    "desc": "Seriously making ui for apps",
+    "link": "https://picosecond.moono.site"
+  },
+  {
+    "name": "Oneday",
+    "desc": "Website blocks components collections",
+    "link": "https://oneday.moono.site"
+  },
+  {
+    "name": "Goodie",
+    "desc": "Indie hackers tools collections",
+    "link": "https://thegoodie.site"
+  },
+  {
+    "name": "Creevoo",
+    "desc": "Collections of stunning website templates",
+    "link": "https://creevoo.store"
+  },
+  {
+    "name": "Heroico",
+    "desc": "Websites design inspirations",
+    "link": "https://heroico.site"
+  },
+  {
+    "name": "Mailo",
+    "desc": "React email components blocks",
+    "link": "https://mailo.moono.site"
+  },
+  {
+    "name": "One thing theme",
+    "desc": "Simple and minimal coding theme",
+    "link": "https://onethingtheme.moono.site"
+  },
+  {
+    "name": "Poockey",
+    "desc": "All in one tools for personal finances",
+    "link": "https://poockey.site"
+  },
+  {
+    "name": "Haloo",
+    "desc": "Testimonials manager for business",
+    "link": "https://tryhaloo.site"
+  },
+  {
+    "name": "Invoic",
+    "desc": "Invoice tools for business",
+    "link": "https://invoic.moono.site"
   }
 ]

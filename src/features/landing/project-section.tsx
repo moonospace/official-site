@@ -1,13 +1,13 @@
-import { ProjectItem } from "./project-item"
-import type { Project } from "./project-item"
-import projectData from "./project-data.json"
+import projectData from "./project-data.json";
+import type { Project } from "./project-item";
+import { ProjectItem } from "./project-item";
 
-const projects = projectData as Project[]
+const projects = projectData as Project[];
 
 export function ProjectSection() {
   return (
-    <section className="flex flex-col w-full mx-auto">
-      <div className="flex flex-col gap-6 text-pretty leading-relaxed">
+    <section className="mx-auto flex w-full flex-col">
+      <div className="flex flex-col gap-6 text-pretty leading-7">
         <p>Product that we ship recently:</p>
 
         <div className="flex flex-col gap-1">
@@ -17,5 +17,5 @@ export function ProjectSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

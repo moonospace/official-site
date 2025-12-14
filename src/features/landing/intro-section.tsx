@@ -1,7 +1,13 @@
-export function HeroSection() {
+export function IntroSection() {
   return (
-    <section className="flex flex-col w-full mx-auto">
-      <div className="flex flex-col gap-6 leading-7 text-pretty">
+    <section className="mx-auto flex w-full flex-col">
+      <h2 className="text-balance font-medium text-2xl leading-tight tracking-tight">
+        Ambitious software
+        <br />
+        crafter.
+      </h2>
+
+      <div className="mt-6 flex flex-col gap-6 text-pretty leading-7">
         <p>
           Moono is collections of saas or software that are designed to be
           better than their competitors. We are a community of like-minded
@@ -21,5 +27,5 @@ export function HeroSection() {
         </p>
       </div>
     </section>
-  )
+  );
 }

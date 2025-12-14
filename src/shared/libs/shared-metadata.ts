@@ -1,9 +1,7 @@
-import { loadConfig } from "./config"
-
 interface GeneratedMetadataInput {
-  title: string
-  description: string
-  image?: string
+  title: string;
+  description: string;
+  image?: string;
 }
 
 export function generatedMetadata({
@@ -11,8 +9,6 @@ export function generatedMetadata({
   description,
   image,
 }: GeneratedMetadataInput) {
-  const config = loadConfig()
-
   return [
     { title },
     {
@@ -26,9 +22,8 @@ export function generatedMetadata({
     { name: "creator", content: "moono" },
     { name: "publisher", content: "moono" },
     { name: "application-name", content: "Moono" },
-    { name: "google-site-verification", content: config.verification.google },
+    { name: "google-site-verification", content: "" },
     { name: "category", content: "Websites" },
-    { name: "generator", content: "React Router" },
     { name: "pinterest-rich-pin", content: "true" },
 
     {
@@ -65,5 +60,5 @@ export function generatedMetadata({
         image ??
         "https://cdn.hashnode.com/res/hashnode/image/upload/v1734266325002/6ec99c83-5d5d-4b37-a19d-def20e02f9f7.png",
     },
-  ]
+  ];
 }

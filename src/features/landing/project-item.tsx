@@ -1,22 +1,33 @@
-import { Link } from "react-router"
-
 export interface Project {
-  name: string
-  desc: string
-  link: string
+  name: string;
+  desc: string;
+  link: string;
 }
 
 interface ProjectItemProps {
-  project: Project
+  project: Project;
 }
 
 export function ProjectItem({ project }: ProjectItemProps): React.ReactElement {
-  const { name, desc, link } = project
+  const { name, desc, link } = project;
 
   return (
-    <Link to={link} target="_blank" className="flex items-center gap-2 py-2">
-      <i className="fi fi-sc-bullet text-foreground/40 text-sm" />
+    <a className="flex items-center gap-1 py-1" href={link} target="_blank">
+      <svg
+        className="text-foreground/40"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="12.1" cy="12.1" r="1" />
+      </svg>
       <span>{name}</span> - <span className="text-foreground/60">{desc}</span>
-    </Link>
-  )
+    </a>
+  );
 }

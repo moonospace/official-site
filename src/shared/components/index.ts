@@ -1,5 +1,0 @@
-export * from "./ui/button"
-export * from "./content"
-export * from "./footer"
-export * from "./header"
-export * from "./centered-layout"
