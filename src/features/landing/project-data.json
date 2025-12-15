@@ -50,8 +50,13 @@
     "link": "https://tryhaloo.site"
   },
   {
-    "name": "Invoic",
-    "desc": "Invoice tools for business",
-    "link": "https://invoic.moono.site"
+    "name": "Okay",
+    "desc": "One tools for business transactions",
+    "link": "https://okay.moono.site"
+  },
+  {
+    "name": "Signa",
+    "desc": "Sign documents with no headache",
+    "link": "https://signa.moono.site"
   }
 ]
